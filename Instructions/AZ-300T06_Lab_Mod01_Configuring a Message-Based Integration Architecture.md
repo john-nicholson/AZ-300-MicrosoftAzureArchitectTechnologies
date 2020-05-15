@@ -122,7 +122,7 @@ The main tasks for this exercise are as follows:
    ```sh
    export FUNCTION_NAME="az300t06f${PREFIX}"
 
-   az functionapp create --name "${FUNCTION_NAME}" --resource-group "${RESOURCE_GROUP_NAME}" --storage-account "${STORAGE_ACCOUNT_NAME}" --consumption-plan-location "${LOCATION}"
+   az functionapp create --name "${FUNCTION_NAME}" --resource-group "${RESOURCE_GROUP_NAME}" --storage-account "${STORAGE_ACCOUNT_NAME}"  --runtime dotnet --consumption-plan-location "${LOCATION}"
    ```
 
 1. From the Cloud Shell pane, run the following to configure Application Settings of the newly created function, linking it to the Application Insights and Azure Storage account:
